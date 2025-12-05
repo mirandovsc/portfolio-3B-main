@@ -7,7 +7,7 @@
 body{
     background-color: rgb(250, 249, 255);
     font-family: Arial, Helvetica, sans-serif;
-   background-image: url(../thumb-1920-678024.png);
+   background-image: url(imagens/thumb-1920-678024.png);
 }
 
 
@@ -125,7 +125,7 @@ nav #div{
 
 .conteudoPerfil h1{
     font-size: 4rem;
-    
+
 }
 
 
