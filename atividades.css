@@ -1,0 +1,267 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image: url(../thumb-1920-678024.png);
+}
+
+main{
+ min-height: 100vh;  
+
+}
+
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7vw;
+    padding-right: 7vw;
+   background-color:  rgb(0, 0, 0);
+   color: white;
+    z-index: 9999;
+}
+
+body{
+    padding-top: 100px;  
+    padding-bottom: 80px; 
+}
+
+
+footer{
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#menu{
+    position: relative;
+}
+
+#menu a{
+    position: absolute;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.dropdown{
+    position: relative;
+}
+
+
+#dropdown-menu{
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.ativar{
+    height: 245px!important;
+}
+
+#dropdown-menu a{
+    padding: 15px;
+    display: block;
+    color: white;
+}
+
+#dropdown-menu a:hover{
+    background-color: white;
+    color: rgb(255, 255, 255);
+}
+
+nav #div{
+    height: 100%;
+    width: 2px;
+    background-color: rgb(255, 3, 3);
+}
+
+
+.titulo-trimestre {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin: 80px 0 20px; 
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+.trimestre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+.card-grid{
+    padding-top: 20px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto 40px; 
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+
+.card{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(255,255,255,0.12);
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    background: rgba(0,0,0,0.25); 
+    border-radius: 6px;
+}
+
+
+.image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: block;
+}
+
+
+.card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.content{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.content p{
+    margin-top: 6px;
+    margin-left: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+.content a{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+
+@media (max-width: 980px){
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        max-width: 900px;
+    }
+
+    .card{
+        width: 260px;
+        height: 330px;
+    }
+
+    .image{
+        height: 190px;
+    }
+}
+
+@media (max-width: 600px){
+  
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 10px;
+    }
+
+    .card{
+        width: 100%;
+        height: auto; 
+    }
+
+    .image{
+        height: 180px;
+    }
+
+    .content a{
+        position: static;
+        transform: none;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+.ra-titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 120px; 
+    color: white;
+}
+
+
+.subtitulo-tri {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin: 25px 0 10px 0; 
+    color: white;
+}
